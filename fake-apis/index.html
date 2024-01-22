@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://ionic.io/ionicons"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap'">   
+</head>
+<body>
+    <div class="main">
+        <div class="profile">
+            <div class="person">
+                <ion-icon size="large" color="black"class="icon" name="person-outline"></ion-icon>
+                <div class="profile__info">
+                    <div class="profile__info__name"> Jason Harun</div>    
+                </div>
+            </div>
+            <div >
+                <h3 class="h3">Welcome to My Streak Counter </h3>
+            </div>
+            
+        </div>
+        <div class="boards">
+            <h3 class="activities">Habits</h3>
+            <div class="habits" id="habitsContainer"></div>
+            <div class="add-habit">
+                <form id="habit-form">
+                    <label  class="input "for="name">Habit Name:</label>
+                    <input style=" border-radius: 5px; border: 2px solid rgb(241, 112, 7);padding-top: 0.6%; padding-bottom:0.6%;" type="text" id="name" required></input>
+                    <label  style= " margin-left:5%;"for="date"> Date stopped/ started</label>
+                    <input style=" border-radius: 5px; border: 2px solid rgb(241, 112, 7); padding-top: 0.7%; padding-bottom:0.7%; padding-inline:0.7%;" type="date" id="date" required></input>
+                    <button class="button" type="submit">Add</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
